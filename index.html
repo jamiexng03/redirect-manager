@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Redirects</title>
+</head>
+<body>
+    <div>
+      <h1>Redirect Manager</h1>
+        <div>
+            <ul>
+                <li>Vanity</li>
+                <li>Short</li>
+                <li>Regular</li>
+                <li>Search for existing Redirect</li>
+            </ul>
+
+            <div>              
+            <!-- Start of 'View 1 - Vanity' -->
+            <form>
+                <input name="id" type="hidden" />
+                
+                <label>Vanity URL *</label>
+                <input type="text" />
+                
+                <label>Redirect To *</label>
+                <input type="text" />
+                
+                <label>Email Address of Owner *</label>
+                <input type="email" />
+                
+                <label>Expiration Date *</label><br />
+                <input type="text" />
+                <br />
+                <br />
+                
+                <label>Campaign Source *</label><br />
+                <select></select>
+                
+                <input type="button" value="Add Source" /><br />
+                
+                <div>
+                    <input type="text" />
+                    <input type="button" value="Submit" />
+                </div>
+                <br />
+                
+                <label>Campaign Medium *</label>
+                <br />
+                <select>
+                    <optgroup label="External">
+                        <option>Vanity</option>
+                        <option>QR Code</option>
+                        <option>Banner</option>
+                        <option>Print</option>
+                        <option>Text</option>
+                        <option>Social</option>
+                        <option>Enewsletter</option>
+                        <option>Email (Email Blast)</option>
+                    </optgroup>
+                    <optgroup label="Internal">
+                        <option>Kit Stuffer</option>
+                        <option>iSlide</option>
+                        <option>Datasheet</option>
+                        <option>Catalog</option>
+                        <option>Brochure</option>
+                        <option>Mailer</option>
+                        <option>Poster</option>
+                        <option>Email Signature</option>
+                    </optgroup>
+                </select>
+                <br />
+
+                <label>Campaign Name *</label>
+                <br />
+                <select name="urlCampaign">
+                </select>
+                <input type="button" value="Add Name" /><br />
+                <div>
+                    <input type="text" />
+                    <input type="button" value="Submit" />
+                </div>
+                <br />
+                <label>Campaign Content</label>
+                <input type="text" name="urlContent" />
+                <label>Campaign Term</label>
+                <input type="text" name="urlTerm" />
+
+                <input type="submit" value="Add" name="submit" />
+                <input type="button" value="Clear" name="cancel" />
+            </form>
+            <!-- End of 'View 1 - Vanity' -->
+
+            <!-- Start of 'View 2 - Short' -->
+            <form>
+                <input name="fromUrl" />
+                <label>Redirect To *</label>
+                <input name="toUrl" type="text" />
+                <label>Email Address of Owner *</label>
+                <input name="email" type="email" />
+                <label>Expiration Date *</label><br />
+                <input name="expiration" value="01/21/2023" /><br />
+                <label for="short-url-builder__include">Include Google URL Builder</label>
+                <input type="checkbox" /><br />
+                
+                <div>
+                    <br />
+                    <label>Campaign Source *</label><br />
+                    <select>
+                    </select>
+                    <input type="button" value="Add Source" /><br />
+                    <div >
+                        <input type="text" />
+                        <input type="button" value="Submit" />
+                    </div>
+                    <br />
+                    <label>Campaign Medium *</label><br />
+                    <select>
+                        <optgroup label="External">
+                            <option>Vanity</option>
+                            <option>QR Code</option>
+                            <option>Banner</option>
+                            <option>Print</option>
+                            <option>Text</option>
+                            <option>Social</option>
+                            <option>Enewsletter</option>
+                            <option>Email (Email Blast)</option>
+                        </optgroup>
+                        <optgroup label="Internal">
+                            <option>Kit Stuffer</option>
+                            <option>iSlide</option>
+                            <option>Datasheet</option>
+                            <option>Catalog</option>
+                            <option>Brochure</option>
+                            <option>Mailer</option>
+                            <option>Poster</option>
+                            <option>Email Signature</option>
+                        </optgroup>
+                    </select><br />
+                    <label>Campaign Name *</label><br />
+                    <select>
+                    </select>
+                    <input type="button" value="Add Name" /><br />
+                    <div>
+                        <input type="text" />
+                        <input type="button" value="Submit" />
+                    </div>
+                    <br />
+                    <label>Campaign Content</label>
+                    <input type="text" name="urlContent" />
+                    <label>Campaign Term</label>
+                    <input type="text" name="urlTerm" />
+                </div>
+                <input type="submit" value="Generate" name="submit" />
+                <input type="button" value="Clear" name="cancel" />
+            </form>
+            <!-- End of 'View 2 - Short' -->
+                
+            <!-- Start of 'View 3 - Regular' -->
+            <form>
+                <input name="id" type="hidden" />
+                <label>Redirect From *</label>
+                <input name="fromURL" type="text" />
+                <label>Redirect To *</label>
+                <input name="toURL" type="text" />
+                <label>Email Address of Owner *</label>
+                <input name="email" type="email" />
+                <label>Expiration Date *</label><br />
+                <input name="expiration" type="text" value="07/21/2024" /><br />
+                <input type="submit" value="Generate" name="submit" />
+                <input value="Clear" name="cancel" />
+            </form>
+            <!-- End of 'View 3 - Vanity' -->
+                
+            <!-- Start of 'View 4 - Search for existing Redirect' -->
+            <form>
+                <ul>
+                    <li>Search</li>
+                    <li>Show expiring</li>
+                    <li>Show most recent</li>
+                </ul>
+                <div>
+                    <select>
+                        <option>Expires within 1 week</option>
+                        <option>Expires within 1 month</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option>Last 24 Hours</option>
+                        <option>Last Week</option>
+                        <option>Last Month</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" />
+                    <br />
+                </div>
+                <a href="#">Search</a>
+            </form>
+            <!-- End of 'View 4 - Search for existing Redirect' -->
+
+            <a href="#">Refresh Caches</a>
+            <a href="#">Marketing Services Knowledge Base</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
